@@ -141,6 +141,11 @@ body {
     margin-right: -28px;
     cursor: pointer;
 }
+@media(max-width: 767px){
+    #header-menu-icon {
+        margin-right: 10px;
+    }
+}
 
 .news-section {
     margin-bottom: 150px;
@@ -151,6 +156,12 @@ body {
     display: block;
     width: 155px;
     height: 51px;
+}
+@media(max-width: 767px){
+    .header-logo {
+        width: 120px;
+        height: auto;
+    }
 }
 
 #menu-open {
@@ -7180,7 +7191,7 @@ footer .choose-flat-button {
     }
 
     .header-container-second {
-        transform: translate(-8px, 0px);
+        /* transform: translate(-8px, 0px); */
     }
 
     .login-link.login-link-header {
@@ -10256,10 +10267,24 @@ path:hover {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+@media(max-width: 991px){
+    .apartments-facades .popup .title {
+        font-size: 14px;
+    }
+    .apartments-facades .popup {
+        padding: 12px;
+    }
+       
+}
 
 .apartments-facades .popup .list .label {
     font-weight: 600;
     margin-bottom: 20px;
+}
+@media(max-width: 991px){
+    .apartments-facades .popup .list .label {
+        font-size: 14px;
+    }
 }
 
 .apartments-facades .popup .list .item {
@@ -10625,7 +10650,8 @@ path:hover {
     }
 
     .apartments-facades .popup {
-        display: none !important;
+        /* display: none !important; */
+        /* font-size: 12px; */
     }
 }
 
@@ -10707,4 +10733,13 @@ path:hover {
     right: 0px;
     margin-right: -20px;
     transform: rotate(180deg);
+}
+@media(max-width: 767px){
+   .header-container-first {
+    width: fit-content;
+   } 
+   header .container {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
 }
