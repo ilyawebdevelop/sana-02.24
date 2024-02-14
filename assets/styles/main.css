@@ -136,6 +136,12 @@ body {
     align-items: flex-start;
 }
 
+@media(max-width: 767px) {
+    .header-container .container {
+        align-items: center;
+    }
+}
+
 .text-section {
     height: auto !important;
     margin: 72px 0px 73px 0px !important;
@@ -1971,11 +1977,15 @@ button.uk-icon:not(:disabled) {
     display: block;
     padding: 0;
     font-size: 18px;
-    margin: 23px 0 43px auto;
+    margin: 0 0 43px auto;
     width: 246px;
     height: 50px;
 }
-
+@media(max-width: 767px){
+    .footer-call {
+        font-size: 15px;
+    }
+}
 .footer-call:hover {
     border: 2px solid #184aa3;
     color: #184aa3;
@@ -1989,6 +1999,12 @@ button.uk-icon:not(:disabled) {
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 11px;
+}
+
+@media(max-width: 767px) {
+    .footer-help {
+        font-size: 15px;
+    }
 }
 
 .footer-help-tel {
@@ -2038,6 +2054,12 @@ button.uk-icon:not(:disabled) {
     font-size: 16px;
     color: #686868;
     font-weight: 500;
+}
+
+@media(max-width: 767px) {
+    .footer-bottom a {
+        font-size: 15px;
+    }
 }
 
 .privacy-policy:after {
@@ -4970,6 +4992,7 @@ footer .choose-flat-button {
 
     .tel-link {
         transform: translateX(5px);
+        font-size: 24px;
     }
 
     .text-section {
@@ -5690,7 +5713,7 @@ footer .choose-flat-button {
     }
 
     .footer-call.pr-lookmore {
-        margin: 18px 0px 45px 0px !important;
+        margin: 0 0px 45px 0px !important;
     }
 
     .shahmatka-popup {
@@ -6374,6 +6397,8 @@ footer .choose-flat-button {
 
     .header-container {
         height: auto !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .contactus-subtitle {
@@ -7310,6 +7335,7 @@ footer .choose-flat-button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 15px;
     }
 
     .pr-text {
@@ -7519,8 +7545,9 @@ footer .choose-flat-button {
     }
 
     .footer-main {
-        width: calc(100% - 48px);
+        /* width: calc(100% - 48px); */
         flex-direction: column;
+        width: 100%;
     }
 
     footer .footer-main-column-f,
@@ -7615,7 +7642,11 @@ footer .choose-flat-button {
     }
 
     .footer-logo {
-        width: 340px;
+        width: 160px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        transform: none!important;
     }
 
     .pr-news-row {
@@ -7626,6 +7657,7 @@ footer .choose-flat-button {
         flex-direction: row;
         justify-content: center;
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .row-in-column,
@@ -7635,7 +7667,7 @@ footer .choose-flat-button {
 
     .social-media,
     .avito-text {
-        margin-left: auto;
+        /* margin-left: auto; */
     }
 
     .inst-link,
@@ -7658,7 +7690,7 @@ footer .choose-flat-button {
 
     .footer-help-tel {
         margin-top: 7px;
-        margin-bottom: 48px;
+        margin-bottom: 30px;
     }
 
     .footer-questions {
@@ -9382,7 +9414,9 @@ footer .choose-flat-button {
     }
 
     .row-in-column.row-in-column-mob {
-        width: 320px;
+        width: 100%;
+        margin-bottom: 0;
+        justify-content: center;
     }
 
     .other-media {
@@ -9390,7 +9424,7 @@ footer .choose-flat-button {
     }
 
     .footer-main-column-six {
-        margin-top: 85px !important;
+        margin-top: 15px !important;
     }
 
     .footer-main-column-six .tel-link {
@@ -9399,13 +9433,14 @@ footer .choose-flat-button {
 
     .footer-main-column-six .footer-call.pr-lookmore {
         margin: 18px auto 0 auto !important;
-        width: 89% !important;
+        width: 340px;
+
     }
 
     .footer-main-column-six .footer-help {
         display: block;
         width: 88%;
-        margin: 45px auto 0 auto !important;
+        margin: 30px auto 0 auto !important;
     }
 
     .footer-help-tel-m {
@@ -9453,7 +9488,7 @@ footer .choose-flat-button {
 
     .footer-main-column-six .footer-call.pr-lookmore {
         /*margin: 49px auto 0px auto !important;*/
-        width: 89% !important;
+        width: calc(100% - 20px)!important;
     }
 
     .images-container img {
@@ -9485,7 +9520,7 @@ footer .choose-flat-button {
     .footer-logo {
         display: block;
         margin: 0 auto;
-        width: 200px;
+        width: 170px;
     }
 
     .footer-main {
@@ -10190,7 +10225,7 @@ path:hover {
 
 .apartments-chess .number {
     width: 5%;
-    min-width: 30px;
+    min-width: 120px;
     text-align: center;
     padding: 5px;
     box-sizing: border-box;
@@ -10220,6 +10255,7 @@ path:hover {
 .apartments-chess .list .item .price {
     font-size: 18px;
     font-weight: 600;
+    padding-left: 0;
 }
 
 .apartments-facades {
@@ -10722,10 +10758,11 @@ path:hover {
 
     .apartments-chess .number {
         width: 10%;
+        min-width: 100px;
     }
 
     .apartments-chess .list .item {
-        width: 130px;
+        width: 142px;
         height: 62px;
         font-size: 10px;
         padding: 4px 10px;
@@ -10756,5 +10793,116 @@ path:hover {
     header .container {
         margin-left: 14px;
         margin-right: 14px;
+        max-width: calc(100% - 28px);
+    }
+}
+
+.form-group label {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none;
+    font-family: inherit;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group .checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    padding-top: 3px;
+    width: unset;
+    height: unset;
+    border: none;
+}
+
+.form-group .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.form-group .checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.form-group .checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.form-group .checkbox input:checked~.checkmark {
+    background-color: #519ef3;
+}
+
+.form-group .checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-group .checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.form-group .checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn {
+    appearance: none;
+    background: #dbdbdb;
+    color: #545454;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.btn[disabled] {
+    background: #57606a;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: #519ef3;
+    color: #fff;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+@media(max-width: 429px){
+    .footer-get-consult {
+        width: calc(100% - 20px);
     }
 }
