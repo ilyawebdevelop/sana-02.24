@@ -48,6 +48,8 @@ body {
 @media (max-width: 1270px) {
     .container {
         max-width: 710px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .breadcrumbs {
@@ -498,7 +500,7 @@ body {
 
 @media (max-width: 767px) {
     .projects-row-first {
-        margin-bottom: 75px !important;
+        margin-bottom: 47px !important;
     }
 }
 
@@ -1981,11 +1983,13 @@ button.uk-icon:not(:disabled) {
     width: 246px;
     height: 50px;
 }
-@media(max-width: 767px){
+
+@media(max-width: 767px) {
     .footer-call {
         font-size: 15px;
     }
 }
+
 .footer-call:hover {
     border: 2px solid #184aa3;
     color: #184aa3;
@@ -7142,7 +7146,7 @@ footer .choose-flat-button {
     }
 
     .pr-card {
-        height: 740px;
+        /* height: 740px; */
     }
 
     .project-card {
@@ -7237,7 +7241,7 @@ footer .choose-flat-button {
     }
 
     .text-section {
-        margin-top: 160px !important;
+        margin-top: 144px !important;
     }
 
     .floors-container {
@@ -7324,7 +7328,7 @@ footer .choose-flat-button {
     }
 
     .text-section {
-        margin-bottom: 77px !important;
+        margin-bottom: 45px !important;
     }
 
     .pr-section {
@@ -7347,7 +7351,8 @@ footer .choose-flat-button {
 
     .pr-section-line-title,
     .pr-section a {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: normal;
     }
 
     .pr-section-line-title br {
@@ -7414,7 +7419,7 @@ footer .choose-flat-button {
     }
 
     .project-card {
-        width: 370px;
+        width: 100%;
     }
 
     .pr-card-img {
@@ -7425,21 +7430,21 @@ footer .choose-flat-button {
     }
 
     .pr-card {
-        width: 371px;
+        width: 100%;
     }
 
     .pr-card::after {
-        top: 326px;
+        top: 324px;
     }
 
     .projects-row-third {
-        width: 370px;
+        width: 100%;
         margin: 0 auto;
         flex-direction: column;
     }
 
     .pr-card-title {
-        width: 350px;
+        width: 100%;
         padding-left: 0;
         font-size: 24px;
     }
@@ -7533,14 +7538,14 @@ footer .choose-flat-button {
     }
 
     .pr-section-s {
-        width: var(--current-width);
+        width: 100%;
     }
 
     .pr-images-row,
     .pr-images-column,
     .pr-news-row {
         flex-direction: column;
-        width: var(--current-width);
+        width: 100%;
         align-items: center;
     }
 
@@ -7574,8 +7579,8 @@ footer .choose-flat-button {
     .price-container,
     #slider-square,
     #slider-price {
-        width: 92%;
-        transform: translate(3%, 0);
+        width: 100%;
+        transform: none;
     }
 
     .floors-container {
@@ -7589,6 +7594,7 @@ footer .choose-flat-button {
     .pr-huge-img {
         background: url("../img/index/pr-big-image-360.png") no-repeat;
         height: 645px;
+        width: 100%;
     }
 
     .sells-open,
@@ -7646,7 +7652,7 @@ footer .choose-flat-button {
         margin-right: auto;
         margin-left: auto;
         display: block;
-        transform: none!important;
+        transform: none !important;
     }
 
     .pr-news-row {
@@ -7775,7 +7781,7 @@ footer .choose-flat-button {
 
     .news-card,
     .news-img {
-        width: 370px;
+        width: 100%;
     }
 
     .news_public-row .news-text,
@@ -8458,7 +8464,7 @@ footer .choose-flat-button {
     }
 
     .floors-container .projects-subtitle__second {
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
 
     .floors-container {
@@ -8983,7 +8989,7 @@ footer .choose-flat-button {
     }
 
     .nav-container.nav-container-main-page {
-        top: 429px !important;
+        top: 100% !important;
         left: 19px !important;
     }
 
@@ -9000,7 +9006,7 @@ footer .choose-flat-button {
     }
 
     .projects-row-second.project-nav {
-        width: 370px !important;
+        width: 100% !important;
     }
 
     .slider-text strong {
@@ -9488,7 +9494,7 @@ footer .choose-flat-button {
 
     .footer-main-column-six .footer-call.pr-lookmore {
         /*margin: 49px auto 0px auto !important;*/
-        width: calc(100% - 20px)!important;
+        width: calc(100% - 20px) !important;
     }
 
     .images-container img {
@@ -10658,7 +10664,7 @@ path:hover {
     }
 
     header .container {
-        margin: 0 30px;
+        margin: 0 20px;
     }
 
     .header-tabs {
@@ -10901,8 +10907,119 @@ path:hover {
     width: 100%;
     z-index: 1;
 }
-@media(max-width: 429px){
+
+@media(max-width: 429px) {
     .footer-get-consult {
         width: calc(100% - 20px);
     }
+}
+
+@media(max-width: 767px) {
+    .headerLogoLg {
+        display: none;
+    }
+}
+
+.headerLogoMob {
+    display: none;
+}
+
+@media(max-width: 767px) {
+    .headerLogoMob {
+        display: block;
+    }
+
+    #location-value,
+    #appointment-value {
+        font-size: 16px;
+    }
+
+    .projects-row-first {
+        margin-bottom: 45px;
+    }
+
+    .form_radio_btn label {
+        font-size: 16px;
+    }
+
+    .balcony-pick-label,
+    .parking-pick-label,
+    .ready-pick-label,
+    .auction-pick-label,
+    .user-save-label,
+    .rules-agree-label {
+        font-size: 16px;
+    }
+
+    .projects-row-second {
+        gap: 15px;
+    }
+
+    .choose-flat-button {
+        height: 52px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+
+    .pr-card-img {
+        height: 55vw;
+    }
+}
+
+@media(max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .pr-title-row-news {
+        margin-bottom: 30px;
+    }
+
+    .pr-section-title {
+        width: 100%;
+    }
+
+    .main-swiper .swiper-slide-main img {
+        height: 63vw !important;
+    }
+
+    .project-section.project-section-main {
+        margin-top: 120px !important;
+    }
+
+    .projects-title {
+        font-size: 24px !important;
+    }
+
+    .promo_public-section .container,
+    .slider-section-main .container {
+        max-width: 100%;
+    }
+
+    .noUi-horizontal .noUi-origin>.noUi-tooltip {
+        /* transform: none!important; */
+    }
+
+    .pr-card::after {
+        top: calc(45vw);
+    }
+
+    .floors-swiper {
+       /* width: calc(100% - 50px)!important; */
+    }
+    .projects-row-second .floors-swiper {
+        margin-left: auto!important;
+        margin-right: auto;
+     
+    }
+}
+
+@media(max-width: 400px) {
+    .pr-card::after {
+        top: calc(44vw);
+    }
+}
+
+.location-container {
+    z-index: 2;
 }
