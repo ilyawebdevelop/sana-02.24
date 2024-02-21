@@ -1120,8 +1120,8 @@ button.uk-icon:not(:disabled) {
 .pr-card:after {
     content: url("../img/index/sdan.png");
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 186px;
+    height: 43px;
     left: 0;
     top: 324px;
 }
@@ -1459,6 +1459,9 @@ button.uk-icon:not(:disabled) {
     max-width: 465px;
     font-size: 20px;
     line-height: 145%;
+}
+.pr-card::after {
+    display: none;
 }
 
 #contactus-form {
@@ -4395,11 +4398,17 @@ footer .choose-flat-button {
 }
 
 .pr-huge-img {
-    background: url("../img/index/pr-big-image.png") no-repeat;
+    /* background: url("../img/index/pr-big-image.png") no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 20px;
     width: 1170px;
     height: 682px;
+    transition: opacity .2s linear;
+}
+.pr-huge-img:hover {
+    opacity: .9;
 }
 
 .pr-huge-img-big {
@@ -5110,7 +5119,7 @@ footer .choose-flat-button {
     }
 
     .pr-huge-img {
-        background: url("../img/index/pr-big-image-1360.png") no-repeat;
+        /* background: url("../img/index/pr-big-image-1360.png") no-repeat; */
         width: 570px;
         height: 645px;
     }
@@ -6345,7 +6354,7 @@ footer .choose-flat-button {
     }
 
     .pr-huge-img {
-        background: url("../img/index/pr-big-image-768.png") no-repeat;
+        /* background: url("../img/index/pr-big-image-768.png") no-repeat; */
         height: 807px;
     }
 
@@ -7247,7 +7256,7 @@ footer .choose-flat-button {
     }
 
     .text-section {
-        margin-top: 144px !important;
+        margin-top: 113px !important;
     }
 
     .floors-container {
@@ -7295,7 +7304,7 @@ footer .choose-flat-button {
     .img-grid-square,
     .img-grid-rectangle,
     .img-grid-rectangle:first-child {
-        margin-bottom: 30px;
+        margin-bottom: 19px;
     }
 
     .tag-block {
@@ -7324,7 +7333,7 @@ footer .choose-flat-button {
 
     #menu-open {
         position: absolute;
-        top: 123px;
+        top: 93px;
         left: calc(50vw - 120px);
     }
 
@@ -7440,7 +7449,7 @@ footer .choose-flat-button {
     }
 
     .pr-card::after {
-        top: 324px;
+        top: 86vw;
     }
 
     .projects-row-third {
@@ -7599,7 +7608,7 @@ footer .choose-flat-button {
     }
 
     .pr-huge-img {
-        background: url("../img/index/pr-big-image-360.png") no-repeat bottom center / cover;
+        /* background: url("../img/index/pr-big-image-360.png") no-repeat bottom center / cover; */
         height: 160vw;
         width: 100%;
     }
@@ -7629,7 +7638,7 @@ footer .choose-flat-button {
     }
 
     .slider-aboutus-title {
-        font-size: 24px;
+        font-size: 36px;
         width: var(--current-width);
     }
 
@@ -8528,7 +8537,7 @@ footer .choose-flat-button {
     }
 
     .projects-row-third .container {
-        row-gap: 26px !important;
+        row-gap: 16px !important;
         padding-left: 0;
         padding-right: 0;
     }
@@ -9002,7 +9011,7 @@ footer .choose-flat-button {
     }
 
     .nav-container.nav-container-main-page {
-        top: 100% !important;
+        top: calc(100% - 39px)!important;
         left: 19px !important;
     }
 
@@ -9275,7 +9284,7 @@ footer .choose-flat-button {
     }
 
     .benefits .swiper-pagination {
-        bottom: 37px !important;
+        bottom: 12px !important;
     }
 
     .benefits .nav-container-aboutus {
@@ -9375,8 +9384,12 @@ footer .choose-flat-button {
 
     .pr-section-lookmore.pr-section-lookmore-more {
         top: auto !important;
-        bottom: -25px !important;
-        left: 136px !important;
+        bottom: -45px !important;
+        left: 0 !important;
+        right: 0;
+        justify-content: center;
+        margin: auto;
+        transform: none;       
     }
 
     .pr-images-row {
@@ -10966,7 +10979,7 @@ path:hover {
     }
 
     .projects-row-second {
-        gap: 15px;
+        gap: 24px;
     }
 
     .choose-flat-button {
@@ -10976,7 +10989,7 @@ path:hover {
     }
 
     .pr-card-img {
-        height: 55vw;
+        height: 93vw;
     }
     .price {
         font-size: 25px;
@@ -11009,7 +11022,7 @@ path:hover {
         position: unset;
     }
     .pr-title-row {
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
     .contactus-section {
         margin-bottom: 60px!important;
@@ -11032,7 +11045,7 @@ path:hover {
     }
 
     .pr-title-row-news {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .pr-section-title {
@@ -11040,11 +11053,11 @@ path:hover {
     }
 
     .main-swiper .swiper-slide-main img {
-        height: 63vw !important;
+        height: 88vw !important;
     }
 
     .project-section.project-section-main {
-        margin-top: 120px !important;
+        margin-top: 80px !important;
     }
 
     .projects-title {
@@ -11061,7 +11074,7 @@ path:hover {
     }
 
     .pr-card::after {
-        top: calc(45vw);
+        top: calc(83vw);
     }
 
     .floors-swiper {
@@ -11079,7 +11092,7 @@ path:hover {
 
 @media(max-width: 400px) {
     .pr-card::after {
-        top: calc(44vw);
+        top: calc(83vw);
     }
 }
 @media(max-width: 380px){
@@ -11090,4 +11103,41 @@ path:hover {
 
 .location-container {
     z-index: 2;
+}
+.pr-card-imgW {
+    position: relative;
+}
+.pr-card-img {
+    transition: opacity .2s linear;
+}
+.pr-card-img:hover {
+    opacity: .9;
+}
+.pr-card-finished {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 22px;
+    padding-left: 22px;
+    background-color: #4b9229;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+@media(max-width: 767px){
+ .pr-section-line-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }   
+ .text-section .pr-text {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
 }
