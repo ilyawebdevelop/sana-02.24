@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://sana-karelia.ru/assets/images/favicon.png?1">
+    <title>CAHA - Строительная компания Петрозаводск</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/modal.css?3">
+    <link rel="stylesheet" href="assets/styles/main.css?14">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+        </svg>
+    </div>
+    <header class="header-container">
+        <div class="container">
+            <div class="header-container-first">
+                <a id="header-menu-icon" class="header-menu-icon"></a>
+                <a class="headerLogoLg" href="https://sana-karelia.ru">
+                    <img class="header-logo" src="https://sana-karelia.ru/assets/img/index/logo.png" alt="logo">
+                </a>
+                <a id="menu-open" href="https://sana-karelia.ru/search">
+                    <img class="menu-logo" src="https://sana-karelia.ru/assets/img/index/menu-icon.png"
+                        alt="menu">Выбрать квартиру
+                </a>
+                <a class="header-container-first-commercial" href="https://sana-karelia.ru/commercial">Коммерческая
+                    недвижимость</a>
+            </div>
+
+            <a class="headerLogoMob" href="https://sana-karelia.ru">
+                <img class="header-logo" src="https://sana-karelia.ru/assets/img/index/logo.png" alt="logo">
+            </a>
+
+            <div class="header-container-second">
+                <a href="https://sana-karelia.ru/actions" class="discount-link">
+                    <img class="discount-nohover" src="https://sana-karelia.ru/assets/img/index/Icon_discount.png"
+                        alt="">
+                    <img class="discount-hover" src="https://sana-karelia.ru/assets/img/index/Icon_discount-active.png"
+                        alt="">
+                    Акции
+                </a>
+                <a href="https://sana-karelia.ru/favorites" class="favorite-link">
+                    <img class="favorite-nohover" src="https://sana-karelia.ru/assets/img/index/Icons_favorite.png"
+                        alt="">
+                    <img class="favorite-hover" src="https://sana-karelia.ru/assets/img/index/Icons_favorite-active.png"
+                        alt="">
+                </a>
+                <a href="https://sana-karelia.ru/cabinet/login" class="login-link login-link-header">
+                    <img class="login-nohover" src="https://sana-karelia.ru/assets/img/index/Icons_key.png" alt="">
+                    <img class="login-hover" src="https://sana-karelia.ru/assets/img/index/Icons_key-active.png" alt="">
+                    Войти
+                </a>
+                <a href="tel:+7 (8142) 33-20-21" class="tel-link tel-link-header">
+                    <span class="img-phone"></span>
+                    +7 (8142) 33-20-21
+                </a>
+            </div>
+            <div id="header-active-menu" class="header-active-menu collapse">
+                <div class="menu-content-col">
+                    <div class="menu-content-row-mobile">
+                        <a href="https://sana-karelia.ru/favorites" class="favorite-link">
+                            <img class="favorite-nohover"
+                                src="https://sana-karelia.ru/assets/img/index/Icons_favorite.png" alt="">
+                            <img class="favorite-hover"
+                                src="https://sana-karelia.ru/assets/img/index/Icons_favorite-active.png" alt="">
+                        </a>
+                        <a href="tel:+7 (8142) 33-20-21" class="tel-link">
+                            <span class="img-phone"></span>
+                            +7 (8142) 33-20-21
+                        </a>
+                    </div>
+
+                    <div class="menu-content">
+                        <div class="footer-mobile-wrapper">
+                            <a id="footer-title1" class="footer-title" href="https://sana-karelia.ru/projects"
+                                style="text-decoration: none;">Проекты</a>
+                            <div id="menu1" class="block-two-column collapse collapse_show">
+                                <a href='https://sana-karelia.ru/project/13' class="footer-project">ЖК
+                                    &quot;Престиж&quot;, ул. Варкауса, д. 13</a>
+                                <a href='https://sana-karelia.ru/project/9' class="footer-project">ЖК &quot;Высокий
+                                    Стандарт&quot;, ул. Чапаева, д. 50</a>
+                                <a href='https://sana-karelia.ru/project/10' class="footer-project">ЖК &quot;Высокий
+                                    Стандарт&quot;, ул. Чапаева, д. 48а</a>
+                                <a href='https://sana-karelia.ru/project/15' class="footer-project">ЖК на ул.Федосовой,
+                                    ул. Федосова, д. </a>
+                                <a href='https://sana-karelia.ru/project/12' class="footer-project">Деловой центр
+                                    &quot;САНА&quot;, ул. Анохина, д. 43</a>
+
+                                <a href='https://sana-karelia.ru/projects' class="footer-project">Все проекты</a>
+                                <a href='https://sana-karelia.ru/search' class="footer-project">Квартиры и
+                                    апартаменты</a>
+                                <a href="https://sana-karelia.ru/commercial" class="footer-project">Коммерческая
+                                    недвижимость</a>
+                                <a href='https://sana-karelia.ru/p/mortgage' class="footer-project">Ипотечное
+                                    кредитование</a>
+                                <a href='https://sana-karelia.ru/p/maternal-capital' class="footer-project">Материнский
+                                    капитал</a>
+                                <a href="https://sana-karelia.ru/actions" class="footer-project">Акции</a>
+                            </div>
+                        </div>
+                        <div class="footer-mobile-wrapper">
+                            <h3 id="footer-title2" class="footer-title">О компании</h3>
+                            <div id="menu2" class="block-two-column collapse collapse_show">
+
+                                <a href='https://sana-karelia.ru/vacancies' class="footer-project">Карьера с нами</a>
+                                <a href='https://sana-karelia.ru/p/documents' class="footer-project">Документация</a>
+                                <a href='https://sana-karelia.ru/p/company' class="footer-project">Управляющая
+                                    компания</a>
+                                <a href='https://sana-karelia.ru/p/press' class="footer-project">Пресс-центр</a>
+                                <a href="https://sana-karelia.ru/news" class="footer-project">Новости и события</a>
+                                <a href='https://sana-karelia.ru/p/cocial' class="footer-project">Социальная
+                                    деятельность</a>
+                                <a href='https://sana-karelia.ru/p/investors' class="footer-project">Инвесторам</a>
+                                <a href='https://sana-karelia.ru/contacts' class="footer-project">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="footer-main-column-six">
+                            <button class="footer-call pr-lookmore">Заказать звонок</button>
+                            <div class="footer-help-container">
+                                <p class="footer-help">Круглосуточная служба поддержки клиентов:</p>
+                                <a class="footer-help-tel" href="tel:+7 (8142) 33-20-21">+7 (8142) 33-20-21</a>
+                            </div>
+                            <div class="row-in-column">
+                                <p class="social-media">Мы в соцсетях</p>
+                                <a href="https://vk.com/sana.karelia" class="vk-link">
+                                    <img class="vk-hover" src="https://sana-karelia.ru/assets/img/index/vk-active.png"
+                                        alt="">
+                                    <img class="vk-nohover"
+                                        src="https://sana-karelia.ru/assets/img/index/vk-noactive.png" alt="">
+                                </a>
+                                <a href="" class="fb-link">
+                                    <img class="fb-hover" src="https://sana-karelia.ru/assets/img/index/fb-active.png"
+                                        alt="">
+                                    <img class="fb-nohover"
+                                        src="https://sana-karelia.ru/assets/img/index/fb-noactive.png" alt="">
+                                </a>
+                                <a href="" class="inst-link">
+                                    <img class="inst-hover"
+                                        src="https://sana-karelia.ru/assets/img/index/inst-active.png" alt="">
+                                    <img class="inst-nohover"
+                                        src="https://sana-karelia.ru/assets/img/index/inst-noactive.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <a class="go-back" id="go-back" href="">
+                <img class="breadcrumbs-icon" src="https://sana-karelia.ru/assets/img/index/icon.png">
+                Вернуться назад
+            </a>
+            <p class="breadcrumbs-text">
+                <a class="go-to-mainpage" href="https://sana-karelia.ru">Главная</a> /
+                <a class="go-to-mainpage" href="https://sana-karelia.ru/news">Новости и события</a> /
+                <span class="current-page">Продажа машино-места в жилом комплексе &quot;Гранд&quot; на
+                    Коммунальной,1</span>
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h1 class="promo-title">Продажа машино-места в жилом комплексе &quot;Гранд&quot; на Коммунальной,1</h1>
+        </div>
+    </section>
+
+    <section class="mission-section" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="missionSectGrid">
+                <div class="missionSectLeft content">
+                    <p>
+                        Покупка парковочного места в подземном паркинге жилого комплекса «Гранд»
+                        на улице Коммунальной, 1: идеальное решение для вашего комфорта и безопасности
+                        автомобиля.
+                    </p>
+                    <p>
+                        Площадь продаваемого парковочного места составляет 13,7 квадратных метра, что в полной
+                        мере удовлетворяет нужды многих автовладельцев. Такая площадь достаточна для парковки
+                        среднего размера автомобиля без каких-либо проблем. Подземный паркинг комплекса "Гранд"
+                        характеризуется хорошей освещенностью и системой видеонаблюдения, что обеспечивает
+                        безопасную среду для вашего автомобиля.
+                    </p>
+                    <h2>
+                        Какие «фишки» в подземном паркинге?
+                    </h2>
+                    <p>
+                        Приобретение парковочного места в подобном комплексе предлагает ряд преимуществ.
+                        Во-первых, это надежность и уверенность в том, что ваш автомобиль всегда будет
+                        находиться в безопасности и защищен от внешних факторов, таких как погода или
+                        возможные кражи. Во-вторых, это удобство и комфорт, так как вам больше не нужно
+                        тратить время на поиск парковочного места. Вы всегда будете знать, где расположен
+                        ваш автомобиль, и сможете быстро и легко забрать его, когда это будет необходимо.
+                        В-третьих, это экономия времени и снижение стресса. Вы уже не будете беспокоиться
+                        о том, что опоздаете на важную встречу из-за поиска места для парковки.
+                    </p>
+                    <p>
+                        Если вы являетесь владельцем автомобиля и желаете приобрести парковочное место
+                        в подземном паркинге жилого комплекса «Гранд» на улице Коммунальной, 1, то это
+                        идеальное решение для вашего комфорта и безопасности. Не упускайте возможность
+                        облегчить свою жизнь и сделать ее более удобной и безопасной.
+                    </p>
+
+                </div>
+                <div class="missionSectRight">
+                    <img src="assets/img/image-lg.png" alt="image" class="missionSectImgMain img-grid-radius">
+                    <img src="assets/img/image-sm.jpg" alt="image" class="missionSectImgSm img-grid-radius">
+                    <img src="assets/img/image-sm.jpg" alt="image" class="missionSectImgSm img-grid-radius">
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="promo_public-section news-section">
+        <div class="container">
+            <h2 class="other-news-title" style="margin-top: 50px;">Другие новости и события компании</h2>
+            <div class="news-flex">
+                <div class="news-card">
+                    <a href="https://sana-karelia.ru/news/20">
+                        <div class="img-grid">
+                            <div class="img-grid-radius img-wrap" style="height: 290px;">
+                                <img src="https://sana-karelia.ru/storage/news/tu/UmGRSgZeXJc3XvUTJEB84cYKoY2TdbntvFz7zpad.jpg"
+                                    alt="Продажа кладовок в жилом комплексе &quot;Высокий Стандарт&quot; На Чапаева, 50"
+                                    title="Продажа кладовок в жилом комплексе &quot;Высокий Стандарт&quot; На Чапаева, 50"
+                                    class="news-img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sana-karelia.ru/news/20" class="news-title">Продажа кладовок в жилом комплексе
+                        &quot;Высокий Стандарт&quot; На Чапаева, 50</a>
+                    <h3 class="news-date">21 / 02 / 2024</h3>
+                </div>
+                <div class="news-card">
+                    <a href="https://sana-karelia.ru/news/19">
+                        <div class="img-grid">
+                            <div class="img-grid-radius img-wrap" style="height: 290px;">
+                                <img src="https://sana-karelia.ru/storage/news/jy/ijxlZFgF7jrx7bubZfxe1P5jyy7GViiLTpGSmys3.jpg"
+                                    alt="Продажа машино-места в жилом комплексе &quot;Гранд&quot; на Коммунальной,1"
+                                    title="Продажа машино-места в жилом комплексе &quot;Гранд&quot; на Коммунальной,1"
+                                    class="news-img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sana-karelia.ru/news/19" class="news-title">Продажа машино-места в жилом
+                        комплексе &quot;Гранд&quot; на Коммунальной,1</a>
+                    <h3 class="news-date">06 / 02 / 2024</h3>
+                </div>
+                <div class="news-card">
+                    <a href="https://sana-karelia.ru/news/17">
+                        <div class="img-grid">
+                            <div class="img-grid-radius img-wrap" style="height: 290px;">
+                                <img src="https://sana-karelia.ru/storage/news/8z/ooEMh6OWb1VN73XtGUJ5zaYlWernHWTSWwHkalfu.jpg"
+                                    alt="В продаже последняя квартира на Чапаева, 50, ЖК &quot;Высокий стандарт&quot;"
+                                    title="В продаже последняя квартира на Чапаева, 50, ЖК &quot;Высокий стандарт&quot;"
+                                    class="news-img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sana-karelia.ru/news/17" class="news-title">В продаже последняя квартира на
+                        Чапаева, 50, ЖК &quot;Высокий стандарт&quot;</a>
+                    <h3 class="news-date">25 / 01 / 2024</h3>
+                </div>
+                <div class="news-card">
+                    <a href="https://sana-karelia.ru/news/16">
+                        <div class="img-grid">
+                            <div class="img-grid-radius img-wrap" style="height: 290px;">
+                                <img src="https://sana-karelia.ru/storage/news/bz/KfuFTP0KfiTkZCqlEi6nZFHGNtDp5k0ygLSzRrOR.png"
+                                    alt="Стартовали продажи квартир в жилом комплексе &quot;Престиж&quot; для юридических лиц и индивидуальных предпринимателей"
+                                    title="Стартовали продажи квартир в жилом комплексе &quot;Престиж&quot; для юридических лиц и индивидуальных предпринимателей"
+                                    class="news-img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sana-karelia.ru/news/16" class="news-title">Стартовали продажи квартир в жилом
+                        комплексе &quot;Престиж&quot; для юридических лиц и индивидуальных предпринимателей</a>
+                    <h3 class="news-date">12 / 01 / 2024</h3>
+                </div>
+                <div class="news-card">
+                    <a href="https://sana-karelia.ru/news/15">
+                        <div class="img-grid">
+                            <div class="img-grid-radius img-wrap" style="height: 290px;">
+                                <img src="https://sana-karelia.ru/storage/news/zk/Di3mlVbaPGltpB2ihE5aKbXbYNFtgR1nvZYKXxS6.jpg"
+                                    alt="27 декабря состоялся новогодний праздник во дворе дома Чапаева,50"
+                                    title="27 декабря состоялся новогодний праздник во дворе дома Чапаева,50"
+                                    class="news-img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sana-karelia.ru/news/15" class="news-title">27 декабря состоялся новогодний
+                        праздник во дворе дома Чапаева,50</a>
+                    <h3 class="news-date">28 / 12 / 2023</h3>
+                </div>
+                <div class="news-card">
+                    <a href="https://sana-karelia.ru/news/14">
+                        <div class="img-grid">
+                            <div class="img-grid-radius img-wrap" style="height: 290px;">
+                                <img src="https://sana-karelia.ru/storage/news/0f/ptEA4BaZ7opMtfMYpGWbRMVPvnkQo2toSGejW425.jpg"
+                                    alt="Приглашаем всем желающих 27 декабря в 19:00 на встречу с Дедом Морозом. Встреча состоится во дворе дома Чапаева, 50."
+                                    title="Приглашаем всем желающих 27 декабря в 19:00 на встречу с Дедом Морозом. Встреча состоится во дворе дома Чапаева, 50."
+                                    class="news-img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sana-karelia.ru/news/14" class="news-title">Приглашаем всем желающих 27 декабря
+                        в 19:00 на встречу с Дедом Морозом. Встреча состоится во дворе дома Чапаева, 50.</a>
+                    <h3 class="news-date">15 / 12 / 2023</h3>
+                </div>
+            </div>
+            <button id="news-lookmore" data-page="2" data-action="https://sana-karelia.ru/news/more">Показать
+                ещё</button>
+        </div>
+    </section>
+    </section>
+
+    <section class="contactus-section">
+        <div class="container">
+            <div class="contactus-wrapper">
+                <div class="contactus-column-f">
+                    <h1 class="contactus-title">Лучшие предложения на рынке недвижимости в Петрозаводске!</h1>
+                    <h2 class="contactus-subtitle">Оставьте заявку и получите первыми эксклюзивные предложения по
+                        покупке квартир.</h2>
+                </div>
+                <form id="contactus-form" method="POST" action="https://sana-karelia.ru/request">
+                    <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo"> <input
+                        id="name-input" type="text" placeholder="Имя" name="name" required>
+                    <input id="tel-input" type="tel" placeholder="Телефон" name="phone" required>
+                    <input id="email-input" type="email" placeholder="E-mail" name="email">
+                    <div class="form-row">
+                        <button type="submit" id="button-contactus">Отправить заявку</button>
+                        <p class="aboutus-form-text">Я принимаю условия <a
+                                href="https://sana-karelia.ru/p/privacy-policy" class="aboutus-text-link">Политики
+                                конфиденциальности</a> и даю согласие на обработку <a
+                                href="https://sana-karelia.ru/p/offerta" class="aboutus-text-link">персональных
+                                данных</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="pr-section-s sana">
+        <div class="container">
+            <div class="pr-title-row">
+                <h1 class="pr-section-title pr-section-title-sana">Жизнь <br> в стиле «САНА»</h1>
+                <a class="pr-section-lookmore pr-section-lookmore-more" href="https://sana-karelia.ru/tags">Смотреть
+                    больше</a>
+            </div>
+
+            <div class="pr-images-row">
+                <div class="img-grid-square">
+                    <img src="https://sana-karelia.ru/storage/tags/3c/preview_sZxrctdOoDSKPBewus6noTQoNcAoh83eecPswJ6N.jpg"
+                        alt="">
+                </div>
+                <div class="img-grid-square">
+                    <img src="https://sana-karelia.ru/storage/tags/ei/preview_X5Ngch7CCJjzd6qQOLJ8vBMVERz4WyNxEwQkHVkh.jpg"
+                        alt="">
+                </div>
+                <div class="img-grid-rectangles">
+                    <div class="img-grid-rectangle">
+                        <img src="https://sana-karelia.ru/storage/tags/oz/preview2_Cvt3pHpnn4Qx74jY88lHK2F0yUHajkWF3M6wAOoS.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-grid-rectangle">
+                        <img src="https://sana-karelia.ru/storage/tags/5p/preview2_Xi2n23gV8XBZdc3s1fMoybPEJwnte4YkmPajqReZ.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-container">
+        <div class="footer-main">
+            <div class="footer-main-column-f">
+                <img src="https://sana-karelia.ru/assets/img/index/logo-large.png" alt="" class="footer-logo">
+
+
+
+                <a href="#" class="login-link">
+                    <img class="login-nohover" src="https://sana-karelia.ru/assets/img/index/Icons_key.png" alt="">
+                    <img class="login-hover" src="https://sana-karelia.ru/assets/img/index/Icons_key-active.png" alt="">
+                    Войти в личный кабинет
+                </a>
+                <div class="row-in-column row-in-column-mob">
+                    <p class="social-media">Мы в соцсетях</p>
+                    <div class="footer-social-wrapper">
+                        <a href="https://vk.com/sana.karelia" class="vk-link">
+                            <img class="vk-hover" src="https://sana-karelia.ru/assets/img/index/vk-active.png" alt="">
+                            <img class="vk-nohover" src="https://sana-karelia.ru/assets/img/index/vk-noactive.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-content">
+                <div class="footer-mobile-wrapper">
+                    <a id="footer-title3" class="footer-title" href="https://sana-karelia.ru/projects"
+                        style="text-decoration: none;">Проекты</a>
+                    <div id="menu3" class="block-two-column collapse collapse_show">
+                        <a href='https://sana-karelia.ru/project/13' class="footer-project">ЖК &quot;Престиж&quot;, ул.
+                            Варкауса, д. 13</a>
+                        <a href='https://sana-karelia.ru/project/9' class="footer-project">ЖК &quot;Высокий
+                            Стандарт&quot;, ул. Чапаева, д. 50</a>
+                        <a href='https://sana-karelia.ru/project/10' class="footer-project">ЖК &quot;Высокий
+                            Стандарт&quot;, ул. Чапаева, д. 48а</a>
+                        <a href='https://sana-karelia.ru/project/15' class="footer-project">ЖК на ул.Федосовой, ул.
+                            Федосова, д. </a>
+                        <a href='https://sana-karelia.ru/project/12' class="footer-project">Деловой центр
+                            &quot;САНА&quot;, ул. Анохина, д. 43</a>
+
+                        <a href='https://sana-karelia.ru/projects' class="footer-project">Все проекты</a>
+                        <a href='https://sana-karelia.ru/search' class="footer-project">Квартиры и апартаменты</a>
+                        <a href="https://sana-karelia.ru/commercial" class="footer-project">Коммерческая
+                            недвижимость</a>
+                        <a href='https://sana-karelia.ru/p/mortgage' class="footer-project">Ипотечное кредитование</a>
+                        <a href='https://sana-karelia.ru/p/maternal-capital' class="footer-project">Материнский
+                            капитал</a>
+                        <a href="https://sana-karelia.ru/actions" class="footer-project">Акции</a>
+                    </div>
+                </div>
+                <div class="footer-mobile-wrapper">
+                    <h3 id="footer-title4" class="footer-title">О компании</h3>
+                    <div id="menu4" class="block-two-column collapse collapse_show">
+
+                        <a href='https://sana-karelia.ru/vacancies' class="footer-project">Карьера с нами</a>
+                        <a href='https://sana-karelia.ru/p/documents' class="footer-project">Документация</a>
+                        <a href='https://sana-karelia.ru/p/company' class="footer-project">Управляющая компания</a>
+                        <a href='https://sana-karelia.ru/p/press' class="footer-project">Пресс-центр</a>
+                        <a href="https://sana-karelia.ru/news" class="footer-project">Новости и события</a>
+                        <a href='https://sana-karelia.ru/p/cocial' class="footer-project">Социальная деятельность</a>
+                        <a href='https://sana-karelia.ru/p/investors' class="footer-project">Инвесторам</a>
+                        <a href='https://sana-karelia.ru/contacts' class="footer-project">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-main-column-six">              
+                <button class="footer-call pr-lookmore" onclick="showRTwidgetForm()">Заказать звонок</button>
+
+                <p class="footer-help">Круглосуточная служба поддержки клиентов:</p>
+                <a class="footer-help-tel" href="tel:+7 (8142) 33-20-21">+7 (8142) 33-20-21</a>
+                <p class="footer-questions">Остались вопросы?</p>
+                <button class="footer-get-consult choose-flat-button get-consult">Получить консультацию</button>
+            </div>
+        </div>
+        <div class="footer-bottom-container">
+            <div class="footer-bottom">
+                <a class="privacy-policy" href="https://sana-karelia.ru/p/privacy-policy">Политика
+                    конфиденциальности</a>
+                <a class="public-offer" href="https://sana-karelia.ru/p/offerta"> Публичная оферта</a>
+                <a class="copyright" href="https://sana-karelia.ru">© 2015—2024 «САНА» — официальный сайт строительной
+                    компании Петрозаводска</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="login-popup-container">
+    </div>
+    <div class="login-popup">
+        <h2 class="login-popup-title">Вход в личный кабинет</h2>
+        <h3 class="login-popup-subtitle">Для входа в личный кабинет необходимо авторизоваться</h3>
+        <form id="authorization" method="post" action="https://sana-karelia.ru/site-login">
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
+            <p class="login-field-name">Телефон:</p>
+            <input type="text" id="login" name="phone" placeholder="Телефон"
+                data-inputmask='"mask": "+7 (999) 999-99-99"' data-mask="" inputmode="text" required>
+            <p class="login-field-name">Пароль:</p>
+            <input type="password" id="password" name="password" required>
+            <div class="checkbox-container save-user-container">
+                <input type="checkbox" id="save-user" name="remember" value="1">
+                <label for="save-user" class="user-save-label">Запомнить меня на этом компьютере</label>
+            </div>
+            <div class="button-row">
+                <button type="submit" class="login-button">Войти</button>
+
+            </div>
+            <a class="forgot-pass" href="#">Забыли пароль?</a>
+        </form>
+
+        <button class="uk-modal-close-default uk-icon uk-close" type="button" aria-label="Закрыть" uk-close="">
+            <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="27" y2="27"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="27" y1="1" x2="1" y2="27"></line>
+            </svg>
+        </button>
+    </div>
+
+
+    <div class="forgot-popup-container">
+    </div>
+    <div class="forgot-popup">
+        <h2 class="login-popup-title">Забыл пароль</h2>
+        <h3 class="login-popup-subtitle">Ваш новый пароль прийдет вам в смс-сообщении</h3>
+
+        <form id="forgot" action="https://sana-karelia.ru/site-forgot" method="post">
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
+            <p class="login-field-name">Телефон:</p>
+            <input type="tel" name="phone" id="forgottel" class="phone-input" placeholder="Телефон"
+                data-inputmask='"mask": "+7 (999) 999-99-99"' data-mask="" inputmode="text" required>
+
+            <div class="button-row">
+                <button type="submit" class="login-button register-button">Прислать
+                    пароль</button>
+                <a class="forgot-login" href="#">Авторизация</a>
+            </div>
+        </form>
+
+        <button class="uk-modal-close-default uk-icon uk-close" type="button" aria-label="Закрыть" uk-close="">
+            <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="27" y2="27"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="27" y1="1" x2="1" y2="27"></line>
+            </svg>
+        </button>
+    </div>
+    <div class="best-popup-container">
+    </div>
+    <div class="best-popup">
+        <h2 class="login-popup-title">Оставить заявку</h2>
+        <h3 class="login-popup-subtitle">Наш менеджер свяжется с вами</h3>
+        <form id="requestform" method="POST" action="https://sana-karelia.ru/request">
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
+            <p class="login-field-name">Имя:</p>
+            <input type="text" id="login" name="name" required>
+            <p class="login-field-name">Телефон:</p>
+            <input type="tel" class="phone-input" name="phone" placeholder="Телефон"
+                data-inputmask='"mask": "+7 (999) 999-99-99"' data-mask="" inputmode="text" required>
+            <p class="login-field-name">Email:</p>
+            <input type="email" class="phone-input" name="email">
+            <div class="button-row">
+                <button type="submit" class="login-button login-button-middle">Отправить
+                    заявку</button>
+            </div>
+        </form>
+
+        <button class="uk-modal-close-default uk-icon uk-close" type="button" aria-label="Закрыть" uk-close="">
+            <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="27" y2="27"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="27" y1="1" x2="1" y2="27"></line>
+            </svg>
+        </button>
+    </div>
+    <div class="send-popup-container">
+    </div>
+    <div class="send-popup">
+        <h2 class="send-popup-title">Сообщение отправлено!</h2>
+
+        <button class="uk-modal-close-default uk-icon uk-close" type="button" aria-label="Закрыть" uk-close="">
+            <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="27" y2="27"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="27" y1="1" x2="1" y2="27"></line>
+            </svg>
+        </button>
+    </div>
+    <div class="order-popup-container">
+    </div>
+    <div class="order-popup">
+        <h2 class="login-popup-title">Отправить заявку</h2>
+        <div class="popup-room-wrapper">
+            <div class="popup-room">
+                <div class="popup-room-img-wrapper">
+                    <img src="" alt="" class="popup-room-img">
+                </div>
+                <div class="popup-room-info">
+                    <div class="popup-room-title">Квартира <b>№45836</b></div>
+                    <div class="popup-room-price">2 269 500 ₽</div>
+                    <div class="popup-room-size">1к, 67 м²</div>
+                </div>
+            </div>
+            <div class="popup-room-address">г.Петрозаводск,ул. Чапаева, д.50</div>
+        </div>
+        <form class="order-projects" id="order-projects" action="https://sana-karelia.ru/booking" method="post">
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo"> <input type="hidden"
+                name="property_id">
+            <p class="login-field-name">Имя:</p>
+            <input type="text" class="phone-input" name="name" required>
+            <p class="login-field-name">Телефон:</p>
+            <input type="tel" class="phone-input" name="phone" required>
+            <p class="login-field-name">Email:</p>
+            <input type="email" class="phone-input" name="email">
+            <p class="login-field-name">Комментарий:</p>
+            <textarea name="comment" class="popup-textarea"></textarea>
+            <div class="checkbox-container save-user-container">
+                <input type="checkbox" id="user-mortgage" name="mortgage" value="1">
+                <label for="user-mortgage" class="user-save-label">Покупка в ипотеку</label>
+            </div>
+            <div class="checkbox-container save-user-container">
+                <input type="checkbox" id="save-user-order" name="confirm" value="1" required>
+                <label for="save-user-order" class="user-save-label">Согласие на обработку персональных данных</label>
+            </div>
+            <div class="button-row">
+                <button type="submit" class="login-button login-button-middle">Отправить</button>
+            </div>
+        </form>
+
+        <button class="uk-modal-close-default uk-icon uk-close" type="button" aria-label="Закрыть" uk-close="">
+            <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="27" y2="27"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="27" y1="1" x2="1" y2="27"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
+    <script src="https://sana-karelia.ru/assets/scripts/collapse.js" type="text/javascript"></script>
+    <script src="https://sana-karelia.ru/assets/scripts/header.js?13" type="text/javascript" defer></script>
+    <script src="https://sana-karelia.ru/assets/scripts/jquery.js" type="text/javascript"></script>
+    <script src="https://sana-karelia.ru/assets/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <script src="https://sana-karelia.ru/assets/scripts/custom.js?12" type="text/javascript" defer></script>
+
+
+
+</body>
+
+</html>
