@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="https://sana-karelia.ru/assets/images/favicon.png?1">
     <title>CAHA - Строительная компания Петрозаводск</title>
-    <link rel="stylesheet" href="assets/styles/modal.css?3">
-    <link rel="stylesheet" href="assets/styles/main.css?12">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/modal.css?3">
+    <link rel="stylesheet" href="assets/styles/main.css?14">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="csrf-token" content="7yKPEbUMJyrPJJIHdIApnLw84oJKw65b17lFXarT">
+    <meta name="csrf-token" content="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
 </head>
 
 <body>
+
     <div class="preloader">
         <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path fill="currentColor"
@@ -157,76 +158,149 @@
         </div>
     </header>
 
-    <section class="pr-section text-section">
+    <section class="breadcrumbs">
         <div class="container">
-            <p class="pr-text" style="white-space: normal;">
-                <span class="pr-section-line-title">События: </span>
-                <span class="pr-section-line-title pr-section-line-text">Монолит ЖК «Престиж» готов. Приступили к
-                    фасаду. Подробнее о ходе строительства — <br><wbr>на фотографиях по </span>
-                <a class="pr-section-line-link" href="https://sana-karelia.ru/project/13#construction"> ссылке.</a>
+            <a class="go-back" id="go-back" href="">
+                <img class="breadcrumbs-icon" src="https://sana-karelia.ru/assets/img/index/icon.png">
+                Вернуться назад
+            </a>
+            <p class="breadcrumbs-text">
+                <a class="go-to-mainpage" href="https://sana-karelia.ru">Главная</a> /
+                <a class="go-to-mainpage" href="https://sana-karelia.ru/projects">Проекты</a> /
+                <span class="current-page">Жилой комплекс &quot;Престиж&quot;</span>
             </p>
         </div>
     </section>
 
-    <section class="slider-section slider-section-main">
+    <section class="promo_public-section">
         <div class="container">
-            <div class="swiper main-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-main">
+            <h1 class="promo-title">Жилой комплекс &quot;Престиж&quot;</h1>
+            <div class="slider-section slider-project-section">
+                <div class="swiper main-swiper project-slider project-slider-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-main">
+                            <img src="https://sana-karelia.ru/storage/addresses/qb/preview_jcxzYbl2ooOVtMQ3EzAGDpI3ht8bnZNEVLwnBLF9.jpg"
+                                alt="slider-picture">
 
+                        </div>
+                        <div class="swiper-slide swiper-slide-main">
+                            <img src="https://sana-karelia.ru/storage/addresses/th/preview_28erklSG6HoxIQAM6O9C71L1VI9RVw91w8Fo7BSn.jpg"
+                                alt="slider-picture">
 
-                        <img src="https://sana-karelia.ru/storage/addresses/qb/preview_jcxzYbl2ooOVtMQ3EzAGDpI3ht8bnZNEVLwnBLF9.jpg"
-                            alt="slider-picture">
-
-
-                    </div>
-                    <div class="swiper-slide swiper-slide-main">
-
-
-                        <img src="https://sana-karelia.ru/storage/addresses/th/preview_28erklSG6HoxIQAM6O9C71L1VI9RVw91w8Fo7BSn.jpg"
-                            alt="slider-picture">
-
-
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-pagination swiper-pagination-main"></div>
-            <div class="nav-container nav-container-main-page">
-                <div class="button-container">
-                    <div class="nav-left nav-left-main"></div>
-                    <div class="line"></div>
-                    <div class="nav-right nav-right-main"></div>
-                </div>
-                <div class="pagination-container">
-                    <p class="current-slide current-slide-main">01</p>
-                    <p class="all-slides all-slides-main">/ 02</p>
+                <div class="swiper-pagination swiper-pagination-main swiper-pagination-concret"></div>
+                <div class="nav-container nav-container-two">
+                    <div class="button-container">
+                        <div class="nav-left nav-left-main"></div>
+                        <div class="line"></div>
+                        <div class="nav-right nav-right-main"></div>
+                    </div>
+                    <div class="pagination-container">
+                        <p class="current-slide current-slide-main">01</p>
+                        <p class="all-slides all-slides-main">/ 02</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="project-section project-section-main">
-        <div class="container">
-            <div class="projects-row-first">
-                <h1 class="projects-title">Наши проекты</h1>
-                <button class="map-button link-page" data-href="https://sana-karelia.ru/projects#mapsection">
-                    <img class="map-nohover" src="https://sana-karelia.ru/assets/img/index/Icons_map.png" alt="">
-                    <img class="map-hover" src="https://sana-karelia.ru/assets/img/index/Icons_map-active.png" alt="">
-                    Посмотреть на карте
-                </button>
+    <div class="info-line-wrapper">
+        <section class="info-line">
+            <div class="info-col-f">
+                <div class="info-column">
+                    <p class="info-title">Площадь квартир:</p>
+                    <p class="info-content info-square">
+                        от 26.00 м² до 629.20 м²
+                    </p>
+                </div>
+                <div class="info-column">
+                    <p class="info-title">Стоимость квартир:</p>
+                    <p class="info-content info-price">
+                        от 5 730 000 ₽
+                    </p>
+                </div>
             </div>
+            <div class="info-col-s">
+                <div class="info-column">
+                    <p class="info-title">Расположение:</p>
+                    <p class="info-content info-location">Карелия, г. Петрозаводск, наб. Варкауса, 13</p>
+                </div>
+                <div class="info-column">
+                    <p class="info-title">Срок сдачи:</p>
+                    <p class="info-content info-date">
+                        2024
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 
-            <div class="projects-row-second project-nav">
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-section-buttons">
+                <a href="#projects" class="menu-button menu-button-active">О проекте</a>
+                <a href="#rooms" class="menu-button">Квартиры/планировки</a>
+                <a href="#location" class="menu-button">Расположение</a>
+                <a href="#landscaping" class="menu-button">Благоустройство</a>
+                <a href="#parking" class="menu-button">Парковка</a>
+                <a href="#construction" class="menu-button">Ход строительства</a>
+            </div>
+            <a class="menu-choose-flat-button" href="#rooms">
+                <img class="noactive-flat-choose"
+                    src="https://sana-karelia.ru/assets/img/project-page/choose-flat-noactive.png" alt="">
+                <img class="active-flat-choose" src="https://sana-karelia.ru/assets/img/project-page/choose-flat-active.png"
+                    alt="">
+                Выбрать квартиру
+            </a>
+        </div>
+ 
+    </section>
+
+    <section class="project-content" id="projects">
+        <div class="container">
+            <div class="row-1 project-content-row">
+                <div class="col-1">
+                    <h2 class="about-project">О проекте</h2>
+                    <h3 class="quote-project">«Вблизи от центра, вдали от суеты»</h3>
+                    <p class="text-project">
+                        На набережной Варкауса возводится двадцатипятиэтажный жилой комплекс "ПРЕСТИЖ", который станет
+                        настоящим архитектурным украшением Петрозаводска.
+                        Квартиры в доме обладают продуманной, удобной планировкой и увеличенным метражом. За счёт
+                        небольших прихожих значительно увеличивается жилое пространство квартир, что делает их более
+                        просторными и удобными для проживания. В нашем жилом комплексе представлен широкий выбор
+                        планировок: от небольших студий до четырехкомнатных квартир с гардеробными и несколькими
+                        санузлами. Каждый найдёт себе жильё по вкусу и потребностям.
+                        Жилой комплекс объединил в себе гармонию природы, транспортную доступность и развитую
+                        инфраструктуру. ЖК "ПРЕСТИЖ" - это идеальное место для тех, кто ценит комфорт, уют и
+                        спокойствие.
+                    </p>
+                </div>
+                <div class="image-radius-container">
+                    <img class="image-radius"
+                        src="https://sana-karelia.ru/storage/addresses/bg/preview_NgLJTzIWDyH0ZsLltyfN9o2NdKfNdB7ILR0jUhTC.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flat-section" id="rooms">
+        <div class="container">
+            <h3 class="flat-section-subtitle">Квартиры/апартаменты </h3>
+            <h2 class="flat-section-title">Подберите идеальную квартиру для себя</h2>
+            <div class="project-nav project-nav-two">
                 <form method="get" action="https://sana-karelia.ru/search" id="search-form" class="projects-row-second"
-                    style="margin-bottom: 90px;">
-                    <input type="hidden" name="_token" value="7yKPEbUMJyrPJJIHdIApnLw84oJKw65b17lFXarT"> <input
-                        type="hidden" name="address_id" value="">
+                    style="margin-bottom: 20px;">
+                    <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo"> <input
+                        type="hidden" name="address_id" value="13">
                     <input type="hidden" name="type" value="apartment">
 
                     <div class="location-container">
                         <h2 class="projects-subtitle">Расположение</h2>
                         <div id="location-select">
-                            <p id="location-value">Выберите расположение</p>
+                            <p id="location-value">&nbsp;</p>
                             <div id="locations" style="display: none;">
                                 <p class="location-item" data-value="">Любое</p>
                                 <p class="location-item" data-value="kuhovka">Кукковка</p>
@@ -458,181 +532,282 @@
                 </form>
 
             </div>
-            <div class="projects-row-third">
-                <div class="container">
-
-
-
-                    <div class="pr-card">
-                        <div class="pr-card-imgW">
-                            <a href="#">
-                                <img class="pr-card-img" src="https://sana-karelia.ru/assets/img/index/pr-card.png"
-                                    alt="image">
-                            </a>
-                            <span class="pr-card-finished">
-                                Комплекс СДАН!
-                            </span>
-                        </div>
-
-                        <h2 class="pr-card-title">ЖК «Высокий стандарт»</h2>
-                        <h3 class="pr-card-location">Карелия, г. Петрозаводск, ул. Чапаева, 50</h3>
-                        <div class="price-tags-container">
-                            <p class="price">от 6 284 000 ₽</p>
-                            <p class="discount-tag">Скидка 5%</p>
-                            <p class="mortgage-tag">Ипотека 11.95%</p>
-                        </div>
-                        <button class="pr-lookmore link-page" data-href="https://sana-karelia.ru/project/9">Узнать
-                            больше о проекте</button>
-                    </div>
-                    <a class="project-card--lg" href="">
-                        <div class="pr-huge-img pr-huge-img-big"
-                            style="background-image: url('/assets/img/index/pr-big-image-360.png');">
-                        </div>
-                    </a>
-
-                    <div class="project-card">
-                        <div class="image-radius-container">
-                            <a href="#"> <img class="pr-card-img image-radius"
-                                    src="/assets/img/index/pr-big-image-360.png" alt=""></a>
-                        </div>
-                        <h2 class="pr-card-title">ЖК &quot;Престиж&quot;</h2>
-                        <h3 class="pr-card-location">Карелия, г. Петрозаводск, наб. Варкауса, 13</h3>
-                        <div class="price-tags-container">
-                            <p class="price">от 5 730 000 ₽</p>
-                            <p class="mortgage-tag">Ипотека 18%</p>
-                            <p class="date-info">Сдача: 2024</p>
-                        </div>
-                        <button class="pr-lookmore link-page" data-href="https://sana-karelia.ru/project/13">Узнать
-                            больше о проекте</button>
-                    </div>
-                    <div class="project-card">
-                        <div class="image-radius-container">
-                            <a href="#">
-                                <img class="pr-card-img image-radius"
-                                    src="https://sana-karelia.ru/storage/addresses/ns/preview_Jd1ugdt7YqlIezwDz1amDU0TGldIeY0M4m3c2ydT.jpg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <h2 class="pr-card-title">ЖК &quot;Высокий Стандарт&quot;</h2>
-                        <h3 class="pr-card-location">Карелия, г. Петрозаводск, ул. Чапаева, 50</h3>
-                        <div class="price-tags-container">
-                            <p class="price">от 6 284 000 ₽</p>
-                            <p class="mortgage-tag">Ипотека 11.95%</p>
-                        </div>
-                        <button class="pr-lookmore link-page" data-href="https://sana-karelia.ru/project/9">Узнать
-                            больше о проекте</button>
-                    </div>
-                    <div class="project-card">
-                        <div class="image-radius-container">
-                            <a href="#">
-                                <img class="pr-card-img image-radius"
-                                    src="https://sana-karelia.ru/storage/addresses/ig/preview_99CQiVUXBBOovsAZNo84YXQK8tAh33DtSD5JSYrF.jpg"
-                                    alt="image">
-                            </a>
-                        </div>
-                        <h2 class="pr-card-title">ЖК &quot;Высокий Стандарт&quot;</h2>
-                        <h3 class="pr-card-location">Карелия, г. Петрозаводск, ул. Чапаева, 48а</h3>
-                        <div class="price-tags-container">
-                            <p class="price">от 4 760 000 ₽</p>
-                            <p class="date-info">Сдача: 2024 год</p>
-                        </div>
-                        <button class="pr-lookmore link-page" data-href="https://sana-karelia.ru/project/10">Узнать
-                            больше о проекте</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <div class="aboutus-wrapper benefits">
-        <section class="aboutus-slider slider-section">
+    <section class="flat-section2">
+        <div class="container">
+            <div class="flat-cards-wrapper">
+
+                <div class="flat-card">
+                    <h3 class="flat-card-title">1-комнатные квартиры</h3>
+                    <h4 class="flat-card-subtitle">
+                        Площадь от 26.00 до 43.80 м²
+                    </h4>
+
+                    <div class="flat-card-img-wrapper">
+                        <img class="flat-card-img"
+                            src="https://sana-karelia.ru/storage/properties/0s/preview_7P2FghNZzQa0hws6XYKQvztqCCbImdO15aBMpdqR.png"
+                            alt="Планировка">
+                    </div>
+                    <p class="flat-card-price">
+                        от 5 730 000 ₽
+                    </p>
+                    <a class="flat-card-button"
+                        href="https://sana-karelia.ru/search?address_id=13&rooms[]=1">Подобрать</a>
+                </div>
+
+                <div class="flat-card">
+                    <h3 class="flat-card-title">2-комнатные квартиры</h3>
+                    <h4 class="flat-card-subtitle">
+                        Площадь от 50.00 до 140.30 м²
+                    </h4>
+
+                    <div class="flat-card-img-wrapper">
+                        <img class="flat-card-img"
+                            src="https://sana-karelia.ru/storage/properties/3s/preview_2WyvEKunRRGHMhk6CvAITT2E683yAREm0e6KmK92.png"
+                            alt="Планировка">
+                    </div>
+                    <p class="flat-card-price">
+                        от 8 450 000 ₽
+                    </p>
+                    <a class="flat-card-button"
+                        href="https://sana-karelia.ru/search?address_id=13&rooms[]=2">Подобрать</a>
+                </div>
+
+                <div class="flat-card">
+                    <h3 class="flat-card-title">3-комнатные квартиры</h3>
+                    <h4 class="flat-card-subtitle">
+                        Площадь от 66.10 до 142.00 м²
+                    </h4>
+
+                    <div class="flat-card-img-wrapper">
+                        <img class="flat-card-img"
+                            src="https://sana-karelia.ru/storage/properties/zs/preview_0X3mAs6WWPgCxuqLpVgBRhmN99rDKtZ5HVmmRoP4.png"
+                            alt="Планировка">
+                    </div>
+                    <p class="flat-card-price">
+                        от 10 110 000 ₽
+                    </p>
+                    <a class="flat-card-button"
+                        href="https://sana-karelia.ru/search?address_id=13&rooms[]=3">Подобрать</a>
+                </div>
+                <div class="flat-card">
+                    <h3 class="flat-card-title">4-комнатные квартиры</h3>
+                    <h4 class="flat-card-subtitle">
+                        Площадь от 113.00 до 146.30 м²
+                    </h4>
+
+                    <div class="flat-card-img-wrapper">
+                        <img class="flat-card-img"
+                            src="https://sana-karelia.ru/storage/properties/fi/preview_4o5wOhSBBs52eYpn8iRiig1cKlPKq9x9MFCH4BhT.png"
+                            alt="Планировка">
+                    </div>
+                    <p class="flat-card-price">
+                        от 17 570 000 ₽
+                    </p>
+                    <a class="flat-card-button"
+                        href="https://sana-karelia.ru/search?address_id=13&rooms[]=4">Подобрать</a>
+                </div>
+            </div>
+            <a class="choose-flat-button shahm-button" href="https://sana-karelia.ru/project/13/chess">Посмотреть
+                шахматку</a>
+        </div>
+    </section>
+
+    <section class="location-section" id="location">
+        <div class="container">
+            <h3 class="location-subtitle"></h3>
+            <div class="location-row-1">
+                <h2 class="location-title">Комфортная и безопасная среда</h2>
+                <p class="location-text">Рядом с ЖК «ПРЕСТИЖ» располагаются объекты для комфортной жизни людей разных
+                    возрастов: детский сад, школа, магазины, кафе, концертный зал. На территории самого жилого комплекса
+                    предусмотрена детская площадка с травмобезопасным покрытием. Кроме того, жильцы смогут наслаждаться
+                    прогулками в парках и скверах, которые находятся в шаговой доступности.</p>
+            </div>
+            <img id="location-map"
+                src="https://sana-karelia.ru/storage/addresses/gg/preview_PXKA1RSPNd5wz0XrYC0GmNBcwukepZamINTdBdXo.jpg"
+                alt="" style="border-radius: 20px;">
+        </div>
+    </section>
+
+    <div class="slider-s-wrapper" id="landscaping">
+        <section class="aboutus-slider slider-section project-s-slider">
             <div class="container">
                 <div class="swiper aboutus-swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-slide-aboutus">
+                        <div class="swiper-slide swiper-slide-aboutus swiper-slide-aboutus-project">
                             <div class="slider-aboutus-column">
-                                <p class="about-our-projects-tag text-ab-main">О наших проектах</p>
-                                <h2 class="slider-aboutus-subtitle text-ab-main">Преимущества</h2>
-                                <h1 class="slider-aboutus-title text-ab-main">Красивое лобби</h1>
-                                <p class="slider-aboutus-text text-ab-main">Дизайнерский холл – одна из главных
-                                    характеристик комплексов. Это просторное и элегантное пространство создает атмосферу
-                                    престижа и уюта, оснащено всем необходимым, включая системы видеонаблюдения. Холл
-                                    предоставляет удобную обстановку для чтения, общения или расслабления жильцам.</p>
+                                <h2 class="slider-aboutus-subtitle blag-t">Благоустройство</h2>
+                                <h1 class="slider-aboutus-title">Престиж</h1>
+                                <p class="slider-aboutus-text">Это уникальное предложение для тех, кто ищет идеальное
+                                    сочетание комфорта и красоты природы. Благодаря расположению рядом с озером и в
+                                    центре города, жители могут наслаждаться прекрасными видами и одновременно
+                                    находиться в шаговой доступности от всех необходимых объектов инфраструктуры.</p>
                             </div>
-                            <img src="https://sana-karelia.ru/storage/advantages/om/VpCvVv0B8cmvuR4qMhEc45cWaZY41q6lBMByBnxb.jpg"
-                                alt="" class="slide-img-aboutus-2">
+                            <img src="https://sana-karelia.ru/storage/addresses/np/preview_ipQKt9RLzmPoyHKEwh3aBeAlQTFpjZRJBK7U0Xcy.jpg"
+                                class="slide-img-aboutus" alt="Престиж" title="Престиж">
                         </div>
-                        <div class="swiper-slide swiper-slide-aboutus">
-                            <div class="slider-aboutus-column">
-                                <p class="about-our-projects-tag text-ab-main">О наших проектах</p>
-                                <h2 class="slider-aboutus-subtitle text-ab-main">Преимущества</h2>
-                                <h1 class="slider-aboutus-title text-ab-main">Детские площадки</h1>
-                                <p class="slider-aboutus-text text-ab-main">Современные детские площадки в наших жилых
-                                    комплексах являются оазисом для детей, где они могут проводить время на свежем
-                                    воздухе, усваивать новые навыки и развиваться в социальных взаимодействиях. Это
-                                    служит одним из приятных и полезных преимуществ для жильцов, желающих принести своим
-                                    детям радость и развитие.</p>
-                            </div>
-                            <img src="https://sana-karelia.ru/storage/advantages/l5/QCD215xqNirb6AtalWUUdO14OzQrEJb6jfn73qJV.jpg"
-                                alt="" class="slide-img-aboutus-2">
-                        </div>
-                        <div class="swiper-slide swiper-slide-aboutus">
-                            <div class="slider-aboutus-column">
-                                <p class="about-our-projects-tag text-ab-main">О наших проектах</p>
-                                <h2 class="slider-aboutus-subtitle text-ab-main">Преимущества</h2>
-                                <h1 class="slider-aboutus-title text-ab-main">Обслуживание</h1>
-                                <p class="slider-aboutus-text text-ab-main">Управляющая компания застройщика имеет ряд
-                                    преимуществ перед сторонней компанией в управлении жилыми комплексами. Она обладает
-                                    более глубоким знанием о проекте, большим интересом в сохранении высокого уровня
-                                    качества жилого комплекса и более прямым оперативным взаимодействием с другими
-                                    подразделениями застройщика.</p>
-                            </div>
-                            <img src="https://sana-karelia.ru/storage/advantages/nl/dmaMnrqfeskHzkUPUMECO374KFzfFNkH0UZTanbz.jpg"
-                                alt="" class="slide-img-aboutus-2">
-                        </div>
-                        <div class="swiper-slide swiper-slide-aboutus">
-                            <div class="slider-aboutus-column">
-                                <p class="about-our-projects-tag text-ab-main">О наших проектах</p>
-                                <h2 class="slider-aboutus-subtitle text-ab-main">Преимущества</h2>
-                                <h1 class="slider-aboutus-title text-ab-main">Почтовые комнаты</h1>
-                                <p class="slider-aboutus-text text-ab-main">Повышение уровня сервиса. Наличие почтовых
-                                    комнат, как правило, считается дополнительным сервисом для жителей, что способствует
-                                    улучшению их общей удовлетворенности от жизни в комплексе.</p>
-                            </div>
-                            <img src="https://sana-karelia.ru/storage/advantages/bt/J081OO0DdhzbCHinOTvU9IOVyQrdFNKVluygkGOv.jpg"
-                                alt="" class="slide-img-aboutus-2">
-                        </div>
-                        <div class="swiper-slide swiper-slide-aboutus">
-                            <div class="slider-aboutus-column">
-                                <p class="about-our-projects-tag text-ab-main">О наших проектах</p>
-                                <h2 class="slider-aboutus-subtitle text-ab-main">Преимущества</h2>
-                                <h1 class="slider-aboutus-title text-ab-main">Пространство</h1>
-                                <p class="slider-aboutus-text text-ab-main">Одной из главных характеристик этих
-                                    комплексов является дизайнерский холл. Он создает определенную атмосферу престижа и
-                                    уюта в здании и является просторным и элегантным пространством, оснащенным всем
-                                    необходимым. Холл обеспечивает жильцам комфортную обстановку, где они могут провести
-                                    время за чтением, общением или расслаблением.</p>
-                            </div>
-                            <img src="https://sana-karelia.ru/storage/advantages/iy/g7j2skMjpfDQEWeHuN1IOfSjrS5WzuhFsHCBWbQ7.jpg"
-                                alt="" class="slide-img-aboutus-2">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-main swiper-pagination-aboutus"></div>
-                <div class="nav-container nav-container-aboutus nav-1">
-                    <div class="button-container">
-                        <div class="nav-left nav-left-aboutus"></div>
-                        <div class="line"></div>
-                        <div class="nav-right nav-right-aboutus"></div>
-                    </div>
-                    <div class="pagination-container">
-                        <p class="current-slide current-slide-aboutus">01</p>
-                        <p class="all-slides all-slides-aboutus">/ 05</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <section class="parking-pr-section" id="parking">
+        <div class="container">
+            <div class="images-container">
+                <div class="image-radius-container">
+                    <img class="image-radius"
+                        src="https://sana-karelia.ru/storage/addresses/b9/preview_0akjsBTq0LFyP3d3quQiY55JicBJ7vCXiHsFyOqo.jpg"
+                        alt="">
+                </div>
+                <div class="images-col">
+                    <div class="image-radius-container">
+                        <img class="image-radius"
+                            src="https://sana-karelia.ru/storage/addresses/8e/preview2_0xXBszWsZx466Wv6lD2v3fGgG4EdnwoasYITqkgU.jpg"
+                            alt="">
+                    </div>
+                    <div class="image-radius-container">
+                        <img class="image-radius"
+                            src="https://sana-karelia.ru/storage/addresses/ku/preview2_4DcwJLPm7DbioE2RrI7ClF738rgEtnV9wJ55yz4y.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <h3 class="parking-pr-subtitle">Парковка</h3>
+                <!-- <h4 class="parking-pr-title"></h4> -->
+                <p class="parking-pr-text">Для личного автотранспорта планируется уличная парковка и подземный паркинг.
+                    Паркинг обеспечит дополнительную защиту автомобилей не только от злоумышленников, но и от
+                    неблагоприятных погодных условий. Жители ЖК «ПРЕСТИЖ могут быть уверены, что их машины в
+                    безопасности и защищены от повреждений. В сам паркинг можно будет спуститься с любого этажа на
+                    комфортабельном современном лифте.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-build-section" id="construction">
+        <div class="container">
+            <h3 class="flat-section-subtitle">Фотогалереи</h3>
+            <h2 class="flat-section-title title-ph">Фотографии и ход строительства</h2>
+            <section class="slider-section build-slider">
+                <div class="swiper build-swiper">
+                    <div class="build-tags">
+                        <p class="build-tag" data-date="date-281">
+                            Февраль, 2024 г.
+                        </p>
+                        <p class="build-tag" data-date="date-272">
+                            Январь, 2024 г.
+                        </p>
+                        <p class="build-tag" data-date="date-275">
+                            Январь, 2024 г.
+                        </p>
+                        <p class="build-tag" data-date="date-261">
+                            Декабрь, 2023 г.
+                        </p>
+                        <p class="build-tag" data-date="date-256">
+                            Октябрь 2023 г.
+                        </p>
+                        <p class="build-tag" data-date="date-250">
+                            Сентябрь 2023 г.
+                        </p>
+                        <p class="build-tag" data-date="date-258">
+                            Октябрь 2023 г.
+                        </p>
+                        <p class="build-tag" data-date="date-249">
+                            Сентябрь 2023 г.
+                        </p>
+                        <p class="build-tag" data-date="date-247">
+                            Август, 2023 г.
+                        </p>
+                        <p class="build-tag" data-date="date-105">
+                            Июнь 2023
+                        </p>
+                        <p class="build-tag" data-date="date-152">
+                            Май 2023
+                        </p>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-build" data-date="date-281">
+                            <img src="https://sana-karelia.ru/storage/addresses/ag/preview_WsbGvLs0RUN0aYVZC7Z3GLvXqGeJRKGtuLchC3O7.png"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Февраль,
+                                2024 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-272">
+                            <img src="https://sana-karelia.ru/storage/addresses/71/preview_iHHQLzqDDKd1lmyaZNv9Zj1p1cAC1gPzcaz91mSG.jpg"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Январь,
+                                2024 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-275">
+                            <img src="https://sana-karelia.ru/storage/addresses/zm/preview_sTi0mN5ascBccEF1Wutskg4cexeUPSoyowlOtiKL.jpg"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Январь,
+                                2024 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-261">
+                            <img src="https://sana-karelia.ru/storage/addresses/li/preview_YHNS5qhbWQBHVVDSgZ6VfRoRdyz47xlO2BZ3tir4.jpg"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Декабрь,
+                                2023 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-256">
+                            <img src="https://sana-karelia.ru/storage/addresses/fb/preview_aCrmx9mzauRkVaZ7ldCYECAK5t4ti6iRUyfJvYbJ.jpg"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Октябрь
+                                2023 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-250">
+                            <img src="https://sana-karelia.ru/storage/addresses/mh/preview_xCHR8c4OzWR49fgfmX8C9it1nJKlg2JET9qyBOcf.png"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Сентябрь
+                                2023 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-258">
+                            <img src="https://sana-karelia.ru/storage/addresses/iz/preview_mYK08622w6skAaWnzUzlg9X9eC9fV6YsQAJYpXhz.jpg"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Октябрь
+                                2023 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-249">
+                            <img src="https://sana-karelia.ru/storage/addresses/ry/preview_TDunBaKZO07TD0wrdoVtvTJyS7ErZE5afck4s6OY.png"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Сентябрь
+                                2023 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-247">
+                            <img src="https://sana-karelia.ru/storage/addresses/al/preview_MLBXo9WR1ydL7CcHRsoZ4ubutLDgF9rbPP9q4vYx.png"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Август,
+                                2023 г.</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-105">
+                            <img src="https://sana-karelia.ru/storage/addresses/qy/preview_yX9Fgsv1Yczpc9GdbdSHbZumY4PLGbEaf2xEM5pH.jpg"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Июнь 2023
+                            </p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-build" data-date="date-152">
+                            <img src="https://sana-karelia.ru/storage/addresses/ok/preview_8qlD2Vb9xQMfOSKLf40Cy5dIe4ll6CnnBQUHkCi5.jpg"
+                                alt="">
+                            <p style="position: absolute; left: 20px; top: 300px;font-size: 50px; color: #fff">Май 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-main"></div>
+                <div class="nav-container nav-container-build">
+                    <div class="button-container">
+                        <div class="nav-left nav-left-build"></div>
+                        <div class="line"></div>
+                        <div class="nav-right nav-right-build"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
 
     <section class="contactus-section">
         <div class="container">
@@ -643,7 +818,7 @@
                         покупке квартир.</h2>
                 </div>
                 <form id="contactus-form" method="POST" action="https://sana-karelia.ru/request">
-                    <input type="hidden" name="_token" value="7yKPEbUMJyrPJJIHdIApnLw84oJKw65b17lFXarT"> <input
+                    <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo"> <input
                         id="name-input" type="text" placeholder="Имя" name="name" required>
                     <input id="tel-input" type="tel" placeholder="Телефон" name="phone" required>
                     <input id="email-input" type="email" placeholder="E-mail" name="email">
@@ -691,62 +866,6 @@
         </div>
     </section>
 
-    <section class="pr-section-s news">
-        <div class="container">
-            <div class="pr-title-row pr-title-row-news">
-                <h1 class="pr-section-title">Новости и события</h1>
-                <a class="pr-section-lookmore pr-section-lookmore-news pr-section-lookmore-news-m"
-                    href="https://sana-karelia.ru/news">Больше новостей</a>
-            </div>
-            <div class="pr-news-row">
-                <div class="news-card">
-                    <a href="https://sana-karelia.ru/news/19">
-                        <div class="img-grid">
-                            <div class="img-grid-radius" style="height: 290px;">
-                                <img src="https://sana-karelia.ru/storage/news/jy/ijxlZFgF7jrx7bubZfxe1P5jyy7GViiLTpGSmys3.jpg"
-                                    alt="Продажа машино-места в жилом комплексе &quot;Гранд&quot; на Коммунальной,1"
-                                    title="Продажа машино-места в жилом комплексе &quot;Гранд&quot; на Коммунальной,1"
-                                    class="news-img">
-                            </div>
-                        </div>
-                    </a>
-                    <a class="news-title" href="https://sana-karelia.ru/news/19">Продажа машино-места в жилом комплексе
-                        &quot;Гранд&quot; на Коммунальной,1</a>
-                    <h3 class="news-date">06 / 02 / 2024</h3>
-                </div>
-                <div class="news-card">
-                    <a href="https://sana-karelia.ru/news/17">
-                        <div class="img-grid">
-                            <div class="img-grid-radius" style="height: 290px;">
-                                <img src="https://sana-karelia.ru/storage/news/8z/ooEMh6OWb1VN73XtGUJ5zaYlWernHWTSWwHkalfu.jpg"
-                                    alt="В продаже последняя квартира на Чапаева, 50, ЖК &quot;Высокий стандарт&quot;"
-                                    title="В продаже последняя квартира на Чапаева, 50, ЖК &quot;Высокий стандарт&quot;"
-                                    class="news-img">
-                            </div>
-                        </div>
-                    </a>
-                    <a class="news-title" href="https://sana-karelia.ru/news/17">В продаже последняя квартира на
-                        Чапаева, 50, ЖК &quot;Высокий стандарт&quot;</a>
-                    <h3 class="news-date">25 / 01 / 2024</h3>
-                </div>
-                <div class="news-card">
-                    <a href="https://sana-karelia.ru/news/16">
-                        <div class="img-grid">
-                            <div class="img-grid-radius" style="height: 290px;">
-                                <img src="https://sana-karelia.ru/storage/news/bz/KfuFTP0KfiTkZCqlEi6nZFHGNtDp5k0ygLSzRrOR.png"
-                                    alt="Стартовали продажи квартир в жилом комплексе &quot;Престиж&quot; для юридических лиц и индивидуальных предпринимателей"
-                                    title="Стартовали продажи квартир в жилом комплексе &quot;Престиж&quot; для юридических лиц и индивидуальных предпринимателей"
-                                    class="news-img">
-                            </div>
-                        </div>
-                    </a>
-                    <a class="news-title" href="https://sana-karelia.ru/news/16">Стартовали продажи квартир в жилом
-                        комплексе &quot;Престиж&quot; для юридических лиц и индивидуальных предпринимателей</a>
-                    <h3 class="news-date">12 / 01 / 2024</h3>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer class="footer-container">
         <div class="footer-main">
@@ -838,7 +957,7 @@
         <h2 class="login-popup-title">Вход в личный кабинет</h2>
         <h3 class="login-popup-subtitle">Для входа в личный кабинет необходимо авторизоваться</h3>
         <form id="authorization" method="post" action="https://sana-karelia.ru/site-login">
-            <input type="hidden" name="_token" value="7yKPEbUMJyrPJJIHdIApnLw84oJKw65b17lFXarT">
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
             <p class="login-field-name">Телефон:</p>
             <input type="text" id="login" name="phone" placeholder="Телефон"
                 data-inputmask='"mask": "+7 (999) 999-99-99"' data-mask="" inputmode="text" required>
@@ -871,7 +990,7 @@
         <h3 class="login-popup-subtitle">Ваш новый пароль прийдет вам в смс-сообщении</h3>
 
         <form id="forgot" action="https://sana-karelia.ru/site-forgot" method="post">
-            <input type="hidden" name="_token" value="7yKPEbUMJyrPJJIHdIApnLw84oJKw65b17lFXarT">
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
             <p class="login-field-name">Телефон:</p>
             <input type="tel" name="phone" id="forgottel" class="phone-input" placeholder="Телефон"
                 data-inputmask='"mask": "+7 (999) 999-99-99"' data-mask="" inputmode="text" required>
@@ -896,7 +1015,7 @@
         <h2 class="login-popup-title">Оставить заявку</h2>
         <h3 class="login-popup-subtitle">Наш менеджер свяжется с вами</h3>
         <form id="requestform" method="POST" action="https://sana-karelia.ru/request">
-            <input type="hidden" name="_token" value="7yKPEbUMJyrPJJIHdIApnLw84oJKw65b17lFXarT">
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo">
             <p class="login-field-name">Имя:</p>
             <input type="text" id="login" name="name" required>
             <p class="login-field-name">Телефон:</p>
@@ -947,7 +1066,7 @@
             <div class="popup-room-address">г.Петрозаводск,ул. Чапаева, д.50</div>
         </div>
         <form class="order-projects" id="order-projects" action="https://sana-karelia.ru/booking" method="post">
-            <input type="hidden" name="_token" value="7yKPEbUMJyrPJJIHdIApnLw84oJKw65b17lFXarT"> <input type="hidden"
+            <input type="hidden" name="_token" value="PXdHm235ZgbdwmWZu2sTz5n7n4oN2fQklERzULYo"> <input type="hidden"
                 name="property_id">
             <p class="login-field-name">Имя:</p>
             <input type="text" class="phone-input" name="name" required>
@@ -980,13 +1099,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
-    <script src="https://sana-karelia.ru/assets/scripts/collapse.js?3" type="text/javascript"></script>
+    <script src="https://sana-karelia.ru/assets/scripts/collapse.js" type="text/javascript"></script>
     <script src="https://sana-karelia.ru/assets/scripts/header.js?13" type="text/javascript" defer></script>
-    <script src="https://sana-karelia.ru/assets/scripts/index.js?5" type="text/javascript" defer></script>
     <script src="https://sana-karelia.ru/assets/scripts/jquery.js" type="text/javascript"></script>
     <script src="https://sana-karelia.ru/assets/plugins/inputmask/jquery.inputmask.min.js"></script>
-    <script src="https://sana-karelia.ru/assets/scripts/custom.js?10" type="text/javascript" defer></script>
+    <script src="https://sana-karelia.ru/assets/scripts/custom.js?12" type="text/javascript" defer></script>
+
     <script src="https://sana-karelia.ru/assets/scripts/form.js?4" defer charset="utf-8"></script>
+    <script src="https://sana-karelia.ru/assets/scripts/concret-project.js?15" defer></script>
+
 
 </body>
 
