@@ -4439,6 +4439,11 @@ footer .choose-flat-button {
 .pr-huge-img-big {
     height: 646px;
 }
+@media(max-width: 767px){
+    .pr-huge-img-big {
+        display: none;
+    }
+}
 
 #map {
     width: 1651px;
@@ -11421,5 +11426,13 @@ path:hover {
 
     .info-location {
         font-size: 16px !important;
+    }
+}
+.pr-img-sm {
+    display: none;
+}
+@media(max-width: 767px){
+    .pr-img-sm {
+        display: block;
     }
 }
